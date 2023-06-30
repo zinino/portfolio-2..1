@@ -23,13 +23,15 @@
 }
 @media (min-width: 800px) {
   :root {
-    --fs-h1: 4.5;
+    --fs-h1: 4.5rem;
     --fs-h2: 3.75rem;
     --fs-h3: 1.5rem;
     --fs-body: 1.125rem;
   }
 }
-
+.logo {
+  width: 200px;
+}
 body {
   background: var(--clr-light);
   color: var(--clr-dark);
@@ -61,10 +63,10 @@ h3 {
 h1 {
   font-size: var(--fs-h1);
 }
-h1 {
+h2 {
   font-size: var(--fs-h2);
 }
-h1 {
+h3 {
   font-size: var(--fs-h3);
 }
 
@@ -160,9 +162,53 @@ nav {
   font-weight: var(--fw-bold);
   color: var(--clr-dark);
 }
+
 @media (max-width: 600px) {
   .services {
     display: block;
   }
+}
+/* about me */
 
+.about-me {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.who-img {
+  box-shadow: var(--bs);
+  height: 450px;
+}
+
+@media (min-width: 600px) {
+  .about-me {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-template-areas:
+      "title img"
+      "subtitle img"
+      "text img";
+    grid-column-gap: 2em;
+  }
+
+  .about-header {
+    grid-area: title;
+  }
+
+  .about-sub {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    position: relative;
+    left: -1em;
+    width: calc(100% + 2em);
+    padding-left: 1em;
+    padding-right: calc(200px + 4em);
+  }
+
+  .who-img {
+    grid-area: img;
+    position: relative;
+    z-index: 2;
+  }
 }
