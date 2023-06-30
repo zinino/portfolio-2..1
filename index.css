@@ -104,6 +104,12 @@ nav {
   position: relative;
 }
 @media (min-width: 600px) {
+  /* .jane {
+    padding: 40px;
+    background: #141414;
+    background-image: url(.images/me2.jpg);
+    width: 250px;
+  } */
   .intro {
     display: grid;
     width: min-content;
@@ -115,6 +121,8 @@ nav {
     grid-template-columns: min-content max-content;
   }
   .intro-img {
+    box-shadow: 0 20px 20px 20px rgba(230, 227, 227, 1.2),
+      0 6px 20px 0 rgba(230, 227, 227, 1.2);
     grid-area: img;
     min-width: 250px;
   }
