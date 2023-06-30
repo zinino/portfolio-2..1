@@ -95,7 +95,7 @@ h3 {
 }
 
 nav {
-  display: none;
+  display: flex;
 }
 
 /* -------intro section--------- */
