@@ -12,6 +12,7 @@
 
   --clr-light: #fff;
   --clr-dark: #303030;
+  --clr-deepdark: #141414;
   --clr-accents: #16e0bd;
 
   --fs-h1: 3rem;
@@ -210,5 +211,45 @@ nav {
     grid-area: img;
     position: relative;
     z-index: 2;
+  }
+}
+/* ----my work------- */
+.portfolio {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 2em 80px 2em;
+  grid-column-gap: 1em;
+}
+.my-work {
+  background-color: var(--clr-dark);
+}
+.mywork-title {
+  color: var(--clr-light);
+  text-align: center;
+}
+.mywork-sub {
+  color: var(--clr-accents);
+  text-align: center;
+  margin: 1em;
+}
+.project {
+  width: 80%;
+  height: 50%;
+  margin-left: 3em;
+  border-radius: 8px;
+}
+.project-p {
+  color: var(--clr-light);
+  margin-left: 3em;
+}
+@media (max-width: 600px) {
+  .portfolio {
+    display: block;
+  }
+  .project {
+    width: 90%;
+    height: 100%;
+    margin-left: 1em;
+    border-radius: 8px;
   }
 }
