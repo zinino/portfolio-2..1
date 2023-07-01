@@ -270,7 +270,8 @@ nav {
   margin: 1rem auto 1.5rem;
 }
 .services {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   margin-bottom: 5em;
 }
 .btn {
@@ -333,7 +334,7 @@ nav {
 /* ----my work------- */
 .portfolio {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   margin: 2em 80px 2em;
   grid-column-gap: 1em;
 }
