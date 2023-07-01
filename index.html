@@ -6,6 +6,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
     />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
@@ -20,23 +21,23 @@
     <title>BekB portfolio</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="logo">
         <img src="images/Dev.png" alt="" />
       </div>
-      <button class="nav-toogle" aria-label="toogle navigation">
+      <button class="nav-toggle" aria-label="toogle navigation">
         <span class="hamburger"></span>
       </button>
       <nav class="nav">
         <ul class="nav-list">
-          <li class="nav-item"><a href="#home" class="nav-link"></a>Home</li>
+          <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
           <li class="nav-item">
-            <a href="#services" class="nav-link"></a>My service
+            <a href="#services" class="nav-link">My service</a>
           </li>
           <li class="nav-item">
-            <a href="#about" class="nav-link"></a>About me
+            <a href="#about" class="nav-link">About me</a>
           </li>
-          <li class="nav-item"><a href="#work" class="nav-link"></a>My work</li>
+          <li class="nav-item"><a href="#work" class="nav-link">My work</a></li>
         </ul>
       </nav>
     </header>
@@ -151,23 +152,52 @@
       </div>
     </section>
     <footer class="footer">
-      <a href="bbereket115@gmail.com" class="footer-link"
+      <a target="_blank" href="mailto:bbereket115@gmail.com" class="footer-link"
         >hello@bbereket115@gmail.com</a
       >
       <ul class="social-list">
         <li class="social-list-item">
-          <a class="social-list-link" href="https://codepen.io">a</a>
+          <a
+            class="social-list-link"
+            id="git"
+            target="_blank"
+            href="https://github.com/zinino"
+            ><i class="fa-brands fa-github"></i
+          ></a>
         </li>
         <li class="social-list-item">
-          <a class="social-list-link" href="http://dribbble.com">b</a>
+          <a
+            class="social-list-link"
+            id="instagram"
+            target="_blank"
+            href="https://www.instagram.com/its_me_dummy00/"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
         </li>
         <li class="social-list-item">
-          <a class="social-list-link" href="https://twitter.com">c</a>
+          <a
+            class="social-list-link"
+            id="twitter"
+            target="_blank"
+            href="www.twitter.com/salsawii3"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
         </li>
         <li class="social-list-item">
-          <a class="social-list-link" href="https://github.com">d</a>
+          <a
+            class="social-list-link"
+            id="telegram"
+            target="_blank"
+            href="https://t.me/RasBBz"
+            ><i class="fa-brands fa-telegram"></i
+          ></a>
         </li>
       </ul>
     </footer>
   </body>
+  <script src="index.js"></script>
+  <script
+    src="https://kit.fontawesome.com/6a446b9aba.js"
+    crossorigin="anonymous"
+  ></script>
 </html>
