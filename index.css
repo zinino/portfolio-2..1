@@ -110,12 +110,9 @@ body {
     font-size: var(--fs-h3);
   }
   .nav-link {
-    color: var(--clr-light);
-    text-decoration: none;
-  }
-  .nav-link:hover {
     color: var(--clr-accents);
     cursor: pointer;
+    text-decoration: none;
   }
   .nav-toggle {
     display: block;
