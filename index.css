@@ -394,6 +394,11 @@ nav {
   .live {
     margin-bottom: 2em;
   }
+  .coming-soon {
+    position: absolute;
+    left: 5%;
+    top: 590%;
+  }
 }
 .languages {
   /* background-color: var(--clr-light); */
