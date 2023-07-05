@@ -395,6 +395,16 @@ nav {
     margin-bottom: 2em;
   }
 }
+.languages {
+  /* background-color: var(--clr-light); */
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+.web {
+  width: 50px;
+  margin: 10px 10px 0px;
+}
 .footer {
   display: flex;
   flex-direction: column;
